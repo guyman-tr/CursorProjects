@@ -1,0 +1,28 @@
+﻿{
+  "version": 1,
+  "synapse": {
+    "schemas": [
+      "BI_DB_dbo",
+      "BI_DB_mixpanel",
+      "BI_DB_python",
+      "DWH_dbo",
+      "Dealing_dbo",
+      "Dealing_staging",
+      "EXW_dbo",
+      "Fivetran_google_sheets",
+      "SalesForce_dbo",
+      "eMoney_Tribe",
+      "eMoney_dbo",
+      "eMoney_google_sheets"
+    ]
+  },
+  "databricks": {
+    "allowCatalogs": ["main"],
+    "allowSchemas": []
+  },
+  "mapping": {
+    "threshold": 0.65,
+    "stripPrefixes": ["vw_", "v_"],
+    "maxCandidatesPrinted": 200
+  }
+}
